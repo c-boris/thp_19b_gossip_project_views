@@ -1,24 +1,13 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Installation, Use the following command before launching the program :
 
-Things you may want to cover:
+$ bundle install
 
-* Ruby version
+Program Launching :
 
-* System dependencies
+$ rails server
 
-* Configuration
+Program Url :
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+http://127.0.0.1:3000
