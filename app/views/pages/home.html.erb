@@ -1,0 +1,15 @@
+  <h1 class="row justify-content-center mb-5"> Bienvenue sur The Gossip Project</h1>
+  
+  <h3 class="mb-5">Liste des potins :</h3>
+  <center>
+  <div class="container row justify-content-center">
+    <% @gossips.each do |gossip| %>
+      <div class="card mb-3 mx-4 card-home" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title"><%= gossip.user.first_name %></h5>
+          <p class="card-text"><em><%= gossip.title %></em></p>
+          <a href="potin/<%=gossip.id%>" class="btn btn-primary">Voir le potin</a>
+        </div>
+      </div>
+    <% end %>
+  </div>

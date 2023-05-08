@@ -1,0 +1,15 @@
+<div class="container" style="height:80vh">
+  <h1><span style="color: #000000;"><%= @title %></span></h1>
+  <h3 class="mb-5">Liste des potins :</h3>
+  <div class="container row justify-content-center">
+    <% @gossips.where(user_id: @id).each do |gossip| %>
+      <div class="card mb-3 mx-4 card-home" style="width: 18rem;">
+        <div class="card-body">
+        <p class="card-text"><%= gossip.title %></em></p>
+        <p class="card-text"><em><%= gossip.content %></em></p>
+        <p class="card-text">Potin créé le : <em><%= gossip.created_at.strftime('%d/%m/%Y') %></em></p>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
